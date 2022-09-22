@@ -1,0 +1,173 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-left {
+    background-color: #3439A0;
+    height: 100%;
+    left: 0;
+    padding: 0 10vw;
+    position: fixed;
+    top: 0;
+    width: 35%;
+}
+.logo {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.content-right {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    margin-left: 35%;
+    padding: 0 10vw;
+    width: 65%;
+}
+
+.logo-mobile {
+    display: none;
+}
+
+.login-title {
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.input {
+    border: 2px solid var(--text-primary);
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 16px;
+    outline: none;
+    padding: 12px 24px;
+}
+
+.input:active, .input:focus {
+    border: 2px solid var(--color-primary) !important;
+}
+
+.checbox-wrapper {
+    align-items: flex-start;
+    display: flex;
+    gap: 5px;
+}
+
+.checbox-wrapper p {
+    font-size: 14px;
+}
+
+.form-button {
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    margin-top: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .24s ease-in-out;
+}
+
+.form-button:hover {
+    background-color: var(--color-secondary);
+}
+
+.login-text {
+    margin-top: 15px;
+}
+
+.login-text a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color .24s ease-in-out;
+}
+
+.login-text a:hover {
+    color: var(--color-secondary);
+}
+
+@media only screen and (max-width: 992px) {
+    .main {
+        height: auto;
+        max-height: unset;
+    }
+
+    .content-left {
+        display: none;
+    }
+
+    .content-right {
+        align-items: center;
+        background-color: #3439A0;
+        margin-left: 0;
+        padding: 90px 0;
+        width: 100%;
+    }
+
+    .logo-mobile {
+        display: block;
+    }
+
+    .login-title {
+        margin: 45px 0;
+    }
+    
+        .login-title, .login-text, .checbox-wrapper p,label {
+            color: #fff;
+        }
+
+    .input {
+        border: none;
+    }
+
+    .input:active, .input:focus {
+        border: none !important;
+    }
+
+    .form-button {
+        background-color: var(--color-secondary);
+    }
+
+    .login-text a {
+        color: #fff;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo-mobile img{
+        height: 100px;
+        width: auto;
+    }
+
+    .login-title {
+        font-size: 26px;
+        margin: 25px;
+    }
+
+    .login-form {
+        padding: 16px;
+        width: 100%;
+    }
+}

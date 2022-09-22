@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/config/main.css" />
+    <link rel="stylesheet" href="style/components/dashboard/main.css">
+    <link rel="icon" href="assets/logo/sp-logo.svg">
+    <title>SoloPay - Dashboard</title>
+</head>
+<body>
+    <header class="header">
+        <div class="hamburger-button" onclick="hamburgerButton(this)">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <a href="#" class="header-logo">
+            <img src="assets/logo/sp-logo-full.svg" alt="SoloPay Logo">
+        </a>
+
+        <div class="header-right">
+            <a href="#" class="notification">
+                <img src="assets/icons/bell.svg" alt="Bell icon">
+            </a>
+            <a href="#" class="gift">
+                <img src="assets/icons/gift.svg" alt="Gift icon">
+                <span>2 NEW UPDATES</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="assets/images/me.jpg" alt="Your picture photo" class="profile-img">
+            </a>
+        </div>
+    </header>
+
+    <main class="main">
+        <nav class="header-navigation">
+            <a href="#" class="menu-item menu-item--active">
+                <img src="assets/icons/dashboard.svg" alt="Dashboard icon" class="menu-icon">
+                <span>Dashboard</span>
+            </a>
+            <a href="#" class="menu-item">
+                <img src="assets/icons/transfer.svg" alt="Transfer icon" class="menu-icon">
+                <span>Transfer</span>
+            </a>
+            <a href="#" class="menu-item">
+                <img src="assets/icons/setting.svg" alt="Settings icon" class="menu-icon">
+                <span>Settings</span>
+            </a>
+            <a href="#" class="menu-item">
+                <img src="assets/icons/support.svg" alt="Support icon" class="menu-icon">
+                <span>Support</span>
+            </a>
+            <a href="masuk.html" class="menu-item">
+                <img src="assets/icons/logout.svg" alt="Log out icon" class="menu-icon">
+                <span>Log out</span>
+            </a>
+        </nav>
+
+        <section class="content">
+            <h1 class="greetings">Hallo, Galang 👋</h1>
+            <p class="dashboard-title">Aktivitas Keuangan Saya</p>
+
+            <div class="row1">
+                <div class="saldo-card">
+                    <p class="text-inform">Saldo anda</p>
+                    <div class="saldo-value-wrapper">
+                        <p class="saldo-value">Rp 2.975.000,00</p>
+                        <img src="assets/icons/view.svg" alt="View icon" class="view-status">
+                    </div>
+                    <div class="account-detail">
+                        <p class="user-account">SoloPay Accounts - <span>007898937</span></p>
+                        <img src="assets/icons/copy.svg" alt="Copy icon">
+                    </div>
+                </div>
+
+                <div class="cash-flow">
+                    <div class="cash-flow-card income">
+                        <div class="cash-flow-text">
+                            <p class="cash-flow-value">Rp <span>3.000.000,</span>00</p>
+                            <p class="cash-flow-title">Pemasukan</p>
+                        </div>
+                        <img src="assets/icons/income-icon.svg" alt="Income icon" class="cash-flow-icon">
+                    </div>
+
+                    <div class="cash-flow-card expenditure">
+                        <div class="cash-flow-text">
+                            <p class="cash-flow-value">Rp <span>2.850.000,</span>00</p>
+                            <p class="cash-flow-title">Pengeluaran</p>
+                        </div>
+                        <img src="assets/icons/expenditure-icon.svg" alt="Expenditure icon" class="cash-flow-icon">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row2">
+                <div class="analytics-card">
+                    <div class="analytics-header">
+                        <p class="analytics-title">Analytics</p>
+                        <div class="analytics-option">
+                            <button type="button">Mingguan</button>
+                            <input type="date" value="2022-09-22" class="analytics-date" />
+                        </div>
+                    </div>
+                    <img src="assets/icons/graf.svg" class="analytics-graf">
+                </div>
+            </div>
+
+            <div class="row3">
+                <p class="history-title">History</p>
+                <p class="history-desc">Transaksi 6 bulan terakhir</p>
+                <div class="history-detail-wrapper">
+                    <div class="history-detail-item">
+                        <p class="history-detail-img">T</p>
+                        <p class="history-detail-text">Tokopedia</p>
+                        <p class="history-detail-text">9/22/2022</p>
+                        <p class="history-detail-text">Rp 150.000</p>
+                        <p class="history-detail-text">Completed</p>
+                    </div>
+
+                    <div class="history-detail-item">
+                        <p class="history-detail-img">T</p>
+                        <p class="history-detail-text">Tokopedia</p>
+                        <p class="history-detail-text">9/08/2022</p>
+                        <p class="history-detail-text">Rp 570.000</p>
+                        <p class="history-detail-text">Completed</p>
+                    </div>
+
+                    <div class="history-detail-item">
+                        <p class="history-detail-img">Q</p>
+                        <p class="history-detail-text">QRIS</p>
+                        <p class="history-detail-text">8/28/2022</p>
+                        <p class="history-detail-text">Rp 18.000</p>
+                        <p class="history-detail-text">Completed</p>
+                    </div>
+
+                    <div class="history-detail-item">
+                        <p class="history-detail-img">P</p>
+                        <p class="history-detail-text">Pulsa</p>
+                        <p class="history-detail-text">8/25/2022</p>
+                        <p class="history-detail-text">Rp 65.000</p>
+                        <p class="history-detail-text">Completed</p>
+                    </div>
+
+                    <div class="history-detail-item">
+                        <p class="history-detail-img">T</p>
+                        <p class="history-detail-text">Tokopedia</p>
+                        <p class="history-detail-text">8/16/2022</p>
+                        <p class="history-detail-text">Rp 102.000</p>
+                        <p class="history-detail-text">Completed</p>
+                    </div>
+                </div>
+
+                <div class="history-btn-wrapper">
+                    <a href="#" class="history-btn">Lihat Semua</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src="script/header.js"></script>
+</html>

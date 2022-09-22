@@ -1,0 +1,31 @@
+.large-container {
+  margin: 0 auto;
+  position: relative;
+  max-width: 1200px;
+}
+
+.medium-container {
+  margin: 0 auto;
+  position: relative;
+  max-width: 1024px;
+}
+
+@media only screen and (max-width: 1366px) {
+  .large-container {
+    margin: 0 40px;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .medium-container {
+    margin: 0 40px;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .large-container,.medium-container {
+    margin: 0 16px;
+  }
+}

@@ -1,0 +1,143 @@
+.header {
+  background-color: #ffffffa1;
+  backdrop-filter: blur(16px);
+  left: 0;
+  padding: 12px 0;
+  position: fixed;
+  top: 0;
+  transition: box-shadow .24s ease-in-out;
+  width: 100%;
+  z-index: 999;
+}
+
+.header-scroll {
+  box-shadow: 0 2px 12px #39258c33;
+}
+
+.header-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-navigation {
+  align-items: center;
+  display: flex;
+  gap: 26px;
+}
+
+.header-nav-item {
+  color: var(--text-primary);
+  font-size: 18px;
+  opacity: 0.65;
+  text-decoration: none;
+  transition: opacity 0.24s ease-in-out;
+}
+
+.header-nav-item--active {
+  opacity: 1;
+}
+
+.header-nav-item:hover {
+  opacity: 1;
+}
+
+.header-nav-item:last-child {
+  border-radius: 10px;
+  background-color: var(--color-primary);
+  color: #fff;
+  opacity: 0.82;
+  padding: 9px 30px;
+  transition: opacity 0.24s ease-in-out;
+}
+
+.header-nav-item:last-child:hover {
+  opacity: 1;
+}
+
+.hamburger-button {
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 28px;
+  z-index: 999;
+}
+
+.line {
+  background-color: var(--color-primary);
+  border-radius: 1px;
+  height: 3px;
+  transition: all 0.24s ease-in-out;
+  transform-origin: left center;
+  width: 100%;
+
+  @media (min-width: 993px) {
+    background-color: #fff;
+  }
+}
+
+.line:first-child {
+  transform-origin: top left;
+  width: 16px;
+}
+
+.line:last-child {
+  transform-origin: bottom left;
+  width: 21px;
+}
+
+.hamburger-button.close .line:first-child {
+  transform: rotate(45deg) scaleX(1.095);
+  width: 100%;
+}
+
+.hamburger-button.close .line:nth-child(2) {
+  width: 0
+}
+
+.hamburger-button.close .line:last-child {
+  transform: rotate(-45deg) scaleX(1.095);
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    background-color: #fff;
+    backdrop-filter: unset;
+  }
+
+  .header-navigation {
+    background-color: #fff;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 72px;
+    padding: 60px 45px;
+    position: absolute;
+    right: -16px;
+    transform: translateX(100%);
+    transition: transform .24s ease-in-out;
+    top: 0;
+    width: 100vw;
+  }
+
+  .showNav {
+    transform: translateX(0);
+  }
+
+  .header-nav-item {
+    font-weight: 600;
+  }
+
+  .hamburger-button {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-logo {
+    height: 60px;
+    width: auto;
+  }
+}

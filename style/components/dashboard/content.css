@@ -1,0 +1,467 @@
+.main {
+    background-color: #F5F7FB;
+    min-height: calc(100vh - 111px);
+    margin-top: 111px;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 40px 0 40px 32px;
+    transform: translateX(150px);
+    width: 1064px;
+}
+
+.row1 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.saldo-card {
+    background-color: var(--color-primary);
+    border-radius: 24px;
+    padding: 32px 24px;
+    overflow: hidden;
+    position: relative;
+    width: 565px;
+}
+
+.saldo-card::before {
+    background-image: url("../../../assets/icons/circle.svg");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: -75%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+.dashboard-title {
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+.text-inform {
+    color: #fff;
+    font-size: 22px;
+    z-index: 9;
+}
+
+.saldo-value-wrapper {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.saldo-value {
+    color: #fff;
+    font-size: 38px;
+    font-weight: 600;
+    z-index: 9;
+}
+
+.view-status {
+    cursor: pointer;
+    z-index: 9;
+}
+
+.account-detail {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.user-account {
+    color: #fff;
+    font-size: 22px;
+    z-index: 9;
+}
+
+.user-account span {
+    font-weight: 600;
+}
+
+.account-detail img {
+    cursor: pointer;
+    z-index: 9;
+}
+
+.cash-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cash-flow-card {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 24px;
+    display: flex;
+    gap: 74px;
+    justify-content: space-between;
+    padding: 10px 24px;
+}
+
+.cash-flow-text {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.cash-flow-value {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cash-flow-value span {
+    font-size: 28px;
+}
+
+.income .cash-flow-title {
+    background-color: rgba(134, 248, 118, 0.2);
+    border-radius: 6px;
+    color: #86F876;
+    margin-top: 6px;
+    padding: 8px 24px;
+}
+
+.expenditure .cash-flow-title {
+    background-color: rgba(248, 118, 118, 0.2);
+    border-radius: 6px;
+    color: #F87676;
+    margin-top: 6px;
+    padding: 8px 24px;
+}
+
+.row2 {
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin-top: 32px;
+    padding: 32px 30px;
+}
+
+.analytics-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.analytics-title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.analytics-option button {
+    background-color: #A9B8CD;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    padding: 18px 24px;
+    transition: background-color .24s ease-in-out;
+}
+
+.analytics-option button:hover {
+    background-color: var(--color-secondary);
+}
+
+.analytics-date {
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    outline: none;
+    padding: 18px 24px;
+}
+
+.analytics-graf {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.row3 {
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin-top: 32px;
+    padding: 32px 30px;
+}
+
+.history-title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.history-desc {
+    margin-top: 10px;
+}
+
+.history-detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.history-detail-item {
+    align-items: center;
+    border-bottom: 1px solid var(--text-primary);
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    transition: background-color .24s ease-in-out;
+}
+
+.history-detail-item:last-child {
+    border-bottom: none;
+}
+
+.history-detail-item:hover {
+    background-color: #f4f4f4;
+}
+
+.history-detail-img {
+    align-items: center;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+    height: 50px;
+    justify-content: center;
+    margin-right: 30px;
+    width: 50px;
+}
+
+.history-detail-text {
+    font-size: 18px;
+    width: 20%;
+}
+
+.history-btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.history-btn {
+    background-color: var(--color-primary);
+    border-radius: 8px;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1440px) {
+    .content {
+        transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .content {
+        padding: 60px 40px;
+        width: 100%;
+    }
+
+    .saldo-card {
+        width: 56%;
+    }
+
+    .cash-flow {
+        width: 40%;
+    }
+
+    .cash-flow-card {
+        gap: 0;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .saldo-card {
+        width: 48%;
+    }
+
+    .saldo-card::before {
+        width: 90%;
+    }
+
+    .saldo-value {
+        font-size: 26px;
+    }
+
+    .user-account {
+        font-size: 20px;
+    }
+
+    .account-detail {
+        margin-top: 45px;
+    }
+
+    .cash-flow {
+        width: 48%;
+    }
+
+    .cash-flow-card {
+        gap: 0;
+    }
+
+    .cash-flow-value span {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        padding: 40px 16px;
+    }
+
+    .row1 {
+        flex-direction: column;
+    }
+
+    .saldo-card {
+        width: 100%;
+    }
+
+    .cash-flow {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 32px;
+        width: 100%;
+    }
+
+    .cash-flow-card {
+        padding: 16px 24px;
+        width: 48%;
+    }
+
+    .cash-flow-icon {
+        height: auto;
+        width: 80px;
+    }
+
+    .row3 {
+        border-radius: 0;
+        margin: 0 -16px;
+        padding: 32px -16px;
+    }
+
+    .history-detail-img {
+        margin-right: 0;
+    }
+
+    .history-detail-text {
+        font-size: 16px;
+    }
+    
+    .history-detail-text:last-child {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .cash-flow {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .cash-flow-card {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .main {
+        margin-top: 80px;
+    }
+
+    .dashboard-title {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+
+    .row1 {
+        margin-top: 30px;
+    }
+
+    .text-inform {
+        font-size: 18px;
+    }
+
+    .saldo-value-wrapper {
+        margin-top: 15px;
+    }
+
+    .saldo-value {
+        font-size: 20px;
+    }
+
+    .account-detail {
+        margin-top: 30px;
+    }
+
+    .user-account {
+        font-size: 14px;
+    }
+
+    .cash-flow {
+        gap: 0;
+    }
+
+    .cash-flow-card {
+        border-radius: 0;
+        margin: 0 -16px;
+        padding: 32px 16px 16px;
+        width: 100vw;
+    }
+
+    .cash-flow-card:last-child {
+        padding-top: 16px;
+    }
+
+    .row2 {
+        border-radius: 0;
+        margin: 0 -16px;
+        padding: 32px 16px;
+    }
+
+    .analytics-title {
+        font-size: 22px;
+    }
+
+    .analytics-option button {
+        display: none;
+    }
+
+    .history-title {
+        font-size: 22px;
+    }
+
+    .history-detail-item {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .history-btn {
+        padding: 12px 16px;
+        font-size: 15px;
+    }
+
+    .history-detail-text {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .history-detail-text {
+        font-size: 10px;
+    }
+}
